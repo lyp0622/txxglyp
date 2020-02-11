@@ -1,3 +1,4 @@
+
 select,option{
     /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
     border: none;
@@ -34,6 +35,9 @@ select::-ms-expand {display: none;}
 //     text-align: center;
 // }
 .box{
+    height: 40px;
+    line-height: 40px;
+    align-items: center;
     display: flex;
     justify-content: space-between;
     // margin: 30px 20px 30px 20px;
@@ -45,6 +49,7 @@ select::-ms-expand {display: none;}
 }
 .num li{
     text-align: center;
+    list-style:none;
 }
 .l1{
     font-size: 20px;
@@ -69,4 +74,33 @@ select::-ms-expand {display: none;}
     font-weight: 500;
     margin-top: 20px;
     color: #7e7f86;
+}
+.k{
+    margin-top: .3rem;
+    
+}
+.kx{
+    line-height: .3rem;
+    font-size: 14px;
+}
+ .tabsharebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    display: flex;
+}
+ .tabsharebtn {
+    height: .66rem;
+    padding-left: .76rem;
+    padding-right: .30rem;
+    line-height: .66rem;
+    font-size: 16px;
+    color: #005dff;
+    border: 1px solid #005dff;
+    border-radius: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
 }

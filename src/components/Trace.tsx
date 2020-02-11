@@ -38,9 +38,10 @@ const Trace = ()=>{
                     </div>
                 </div>    
             </div>
+        </div>
             <div className={styles.timeLine}></div>
             {
-                trace.splice(0,10).map((item,index)=>{
+                trace.slice(0,10).map((item,index)=>{
                     return <div className={styles.singleNew} key={index}>
                                 <div className={styles.timeIcon}></div>                   
                                 <div className={styles.times} >
@@ -54,12 +55,11 @@ const Trace = ()=>{
                                         {/* 内容 */}
                                         <div className={styles.desc}>{item.desc}</div>
                                         {/* 来源 */}
-                                        <div className={styles.source}>{item.source}</div>
+                                        <div className={styles.source}>来源：{item.source}</div>
                                     </div>                 
                             </div>
                 })
             }           
-       </div>
     </div>
 }
 

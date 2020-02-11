@@ -17,7 +17,7 @@ const Hospital = (props: { total: TotalType }) => {
         <div>
             {
                 <>
-                   <img className={styles.img} src="https://mat1.gtimg.com/news/images/inews/2020/feiyan/18/img/top_headv3.png" alt="" />
+                   <img className={styles.imgs} src="https://mat1.gtimg.com/news/images/inews/2020/feiyan/18/img/top_headv3.png" alt="" />
                       {
                           props.total&&
                       <p className={styles.f}>统计截至<span>{props.total.lastUpdateTime}</span>更新于<span>{minutes}</span>分钟前</p>

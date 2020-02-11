@@ -23,7 +23,7 @@ export const getHospitalProvince = ()=>{
 
 // 获取全国医院列表
 export const getHospital = (arr:string)=>{
-    return axios.post(`${wechatHost}/api/THPneumoniaService/getHospitalProvince`,{
+    return axios.post(`${wechatHost}/api/THPneumoniaService/getHospitalCityByProvince`,{
         service: 'THPneumoniaOuterService',
         args: {req:{province:arr}},
         func: 'getHospitalCityByProvince',

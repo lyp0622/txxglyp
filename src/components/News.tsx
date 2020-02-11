@@ -126,14 +126,19 @@ const News = (props: {areaTree: AreaType[]}) => {
               {
                   curPoo.map((item,index)=>{
                       return(
-                          <div>
-                  <span>{item.title}</span>
+                          <div key={index} className={styles.k}>
+                                 <span className={styles.kx}>{item.title}</span>
                           </div>
                       )
                   })
               }
              
         </div>
+        <div className={styles.tabsharebox} >
+            <div className={styles.tabsharebtn} id="tab-share-btn">分享<span className="tab-name share-tab-name taplist-btn">湖北</span>数据</div>
+            <div className={styles.tabsharebtn} id="tab-look-btn">关注<span className="tab-name btn-tab-name taplist-btn">湖北</span>疫情
+            </div>
+          </div>
     </div>
 }
 
